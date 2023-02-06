@@ -1,1 +1,7 @@
-[{"id":"1","title":"Test","text":"This is the testing note, you may delete me"},{"title":"Another Test","text":"This is another test that I Have Typed","id":"3ffb"}]
+[
+    {
+        "id":"1",
+        "title":"Welcome",
+        "text":"Welcome to my Notes App! You may create, view, and delete the notes here! The plus mark at the top right will let you make your own note."
+    }
+]
