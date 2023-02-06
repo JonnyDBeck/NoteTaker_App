@@ -61,6 +61,23 @@ app.post('/api/notes', (req, res) => {
 
 });
 
+app.delete("/api/notes/:id", function(req, res) {
+
+  var newNoteData = noteData;
+
+  let obj = newNoteData.find(x => x.id === req.body.id);
+  let index = newNoteData.indexOf(obj);
+
+  newNoteData.splice(index, 1);
+
+  fs.writeFile('./db/db.json', JSON.stringify(newNoteData), function (err) {
+    if (err) throw err;
+    console.log('Replaced!');
+  });
+
+  res.status(201).json(obj);
+});
+
 app.listen(PORT, () =>
   console.log(`App listening at http://localhost:${PORT}`)
 );
