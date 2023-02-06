@@ -1,7 +1,1 @@
-[
-    {
-        "id":"1",
-        "title":"Test",
-        "text":"This is the testing note, you may delete me"
-    }
-]
+[{"id":"1","title":"Test","text":"This is the testing note, you may delete me"},{"title":"Another Test","text":"This is another test that I Have Typed","id":"3ffb"}]
